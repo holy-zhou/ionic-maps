@@ -3,7 +3,7 @@ import { ionicBootstrap, Platform, Nav} from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import { HomePage } from './pages/home/home';
-
+import { GmapPage } from './pages/gmap/gmap';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -20,7 +20,10 @@ export class MyApp {
       StatusBar.styleDefault();
     });
 
-    this.pages = [{ title: "Home", component: HomePage }];
+    this.pages = [
+      { title: "Home", component: HomePage },
+      { title: "GoogleMap", component: GmapPage }
+    ];
   }
 
   openPage(page) {
