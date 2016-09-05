@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>GPS Reader</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>{{Location}}</ion-label>
+  </ion-item>
+  <button (click)="readGps()" block>Read GPS</button>
+</ion-content>
